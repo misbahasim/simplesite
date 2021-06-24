@@ -176,10 +176,11 @@
                 <input type="text" placeholder="Name" required class="form-control form-design" pattern="[a-zA-Z ]+"
                     title="you can enter only letters">
                 <input type="email" placeholder="Email Address" required class="form-control form-design"
-                    pattern="[a-zA-Z_][a-zA-Z0-9.]+@[a-z]+.[a-z]{2,4}">
+                    pattern="[a-zA-Z_][a-zA-Z0-9.]+@[a-z]+\.[a-z]{2,}$">
                 <input type="tel" placeholder="Phone Number" required class="form-control form-design"
                     pattern="[0-9]{11}" title="you can enter only 11 numbers">
-                <textarea rows="5" class="form-design form-control" placeholder="Message" required max="100"></textarea>
+                <textarea rows="5" class="form-design form-control" placeholder="Message" required
+                    maxlength="150"></textarea>
                 <button id="form_button">Send</button>
             </form>
         </div>
